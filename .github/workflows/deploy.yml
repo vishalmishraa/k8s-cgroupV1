@@ -17,9 +17,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Copy Docker image to root
-      run: cp ./Dockerfile .
-
     - name: Build Docker Image
       run: docker build -t vishal022/cgroupv1:latest .
 
