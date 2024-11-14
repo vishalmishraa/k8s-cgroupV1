@@ -11,6 +11,6 @@ sudo sed -i 's/GRUB_CMDLINE_LINUX="/&systemd.unified_cgroup_hierarchy=0 /' /etc/
 
 # Update GRUB
 sudo update-grub
-
+ 
 # Reboot the node
 sudo reboot
