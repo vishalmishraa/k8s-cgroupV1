@@ -2,8 +2,9 @@
 
 # Check if the cgroup configuration is already set
 if grep -q "systemd.unified_cgroup_hierarchy=0" /etc/default/grub; then
-    echo "Cgroup configuration already set."
-    exit 0
+    echo "The cgroup configuration is already set updating greb and rebooting the node"
+    update-grub
+    reboot
 fi
 
 # Add the cgroup configuration
