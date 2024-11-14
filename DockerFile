@@ -10,4 +10,4 @@ COPY configure_cgroup.sh /usr/local/bin/configure_cgroup.sh
 RUN chmod +x /usr/local/bin/configure_cgroup.sh
 
 # Run the script
-CMD ["/usr/local/bin/configure_cgroup.sh"]
+CMD ["/usr/local/bin/configure_cgroup.sh"] 
