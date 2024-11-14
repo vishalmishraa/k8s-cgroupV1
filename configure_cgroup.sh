@@ -7,10 +7,10 @@ if grep -q "systemd.unified_cgroup_hierarchy=0" /etc/default/grub; then
 fi
 
 # Add the cgroup configuration
-sudo sed -i 's/GRUB_CMDLINE_LINUX="/&systemd.unified_cgroup_hierarchy=0 /' /etc/default/grub
+sed -i 's/GRUB_CMDLINE_LINUX="/&systemd.unified_cgroup_hierarchy=0 /' /etc/default/grub
 
 # Update GRUB
-sudo update-grub
+update-grub
  
 # Reboot the node
-sudo reboot
+reboot
